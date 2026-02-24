@@ -3,6 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,7 +21,10 @@
       <div class="hero">
         <div class="hero-content">
           <div class="hero-content-left">
-            <h1>Hi, I am John, Creative Technologist</h1>
+            <h1>
+              Hi, I am John, <br />
+              Creative Technologist
+            </h1>
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
@@ -29,5 +38,53 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="blog">
+        <div class="container">
+            <div class="blog-inf">
+                <p>Recent posts</p>
+                <a href="#">View all</a>
+            </div>
+            <div class="blog-cards">
+                <div class="card">
+                    <h3 class="card-tittle">Making a design system from scratch</h3>
+                    <div class="card-info">
+                        <p>12 Feb 2020</p>
+                        <p>|</p>
+                        <p>Design, Pattern</p>
+                    </div>
+                    <p class="card-description">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet sint. Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card-tittle">Creating pixel perfect icons in Figma</h3>
+                    <div class="card-info">
+                        <p>12 Feb 2020</p>
+                        <p>|</p>
+                        <p>Figma, Icon Design</p>
+                    </div>
+                    <p class="card-description">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet sint. Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section></section>
+    </main>
+    <footer>
+      <div class="footer-icons">
+        <img src="img/fb.svg" alt="Facebook" />
+        <img src="img/insta.svg" alt="Instagram" />
+        <img src="img/Group.svg" alt="Twitter/X" />
+        <img src="img/Linkedin.svg" alt="Linkedin" />
+      </div>
+      <p class="footer-text">Copyright ©2020 All rights reserved</p>
+    </footer>
   </body>
 </html>

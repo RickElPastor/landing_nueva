@@ -5,95 +5,191 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
 }
 
 /* Menu */
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    gap: 33px;
-    padding: 27px 60px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 33px;
+  padding: 20px 60px 0 0;
 }
 
 .nav a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* Hero */
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    gap: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 120px;
 }
 
 .hero-content-left {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
 }
 
 .hero-content-left h1 {
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 50px;
-    letter-spacing: 0.02em;
-    padding: 0;
-    margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #21243D;
 }
 
 .hero-content-left p {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    padding: 0;
-    margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #21243D;
 }
 
 .hero-content-left button {
-    width: 208px;
-    height: 47px;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    padding: 0;
-    margin: 0;
-    background-color: #FF6464;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  width: 208px;
+  height: 47px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  background-color: #ff6464;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .hero-content-left button:hover {
-    background-color: #ff5151;
-    transform: scale(1.05);
+  background-color: #ff5151;
+  transform: scale(1.05);
 }
 
 .hero-content-right img {
-    width: 243px;
-    height: 243px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 40px 20px rgba(#EDF7FA);
+  width: 243px;
+  height: 243px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 20px rgba(#edf7fa);
 }
 
 /* Blog */
+
+.blog {
+    width: 100%;
+    background-color: #EDF7FA;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.blog-inf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 15px;
+}
+
+.blog-inf p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #21243D;
+}
+
+.blog-inf a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+.blog-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 32px;
+}
+
+.card {
+    width: 418px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.card-tittle {
+    font-size: 26px;
+    font-weight: 700;
+    color: #21243D;
+    padding: 24px 21px 17px 23px ;
+}
+
+.card-info {
+    display: flex;
+    padding-left: 23px;
+    gap: 26px;
+}
+
+.card-info p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #21243D;
+}
+
+.card-description {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 11px 48px 28px 23px;
+    color: #21243D;
+}
+
+/* Footer */
+
+.footer-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding-top: 51px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 26px;
+  padding-bottom: 54px;
+}
