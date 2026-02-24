@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Menu */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 33px;
+    padding: 27px 60px 0 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 120px;
+}
+
+.hero-content-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+}
+
+.hero-content-left h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content-left p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content-left button {
+    width: 208px;
+    height: 47px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin: 0;
+    background-color: #FF6464;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-content-left button:hover {
+    background-color: #ff5151;
+    transform: scale(1.05);
+}
+
+.hero-content-right img {
+    width: 243px;
+    height: 243px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 20px rgba(#EDF7FA);
+}
+
+/* Blog */
