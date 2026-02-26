@@ -17,8 +17,13 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 70%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -62,8 +67,6 @@ a {
   justify-content: center;
   align-items: center;
   height: 70vh;
-  width: 70%;
-  margin: 0 auto;
 }
 
 .hero-content {
@@ -120,7 +123,7 @@ a {
   height: 243px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 40px 20px rgba(#edf7fa);
+  box-shadow: 0 0 40px 20px rgba(237, 247, 250, 0.5);
 }
 
 /* Blog */
@@ -164,7 +167,7 @@ a {
 .card {
     width: 418px;
     background-color: #ffffff;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .card-tittle {
@@ -315,7 +318,7 @@ a {
 
 .work-card-date p {
   font-size: 20px;
-  font: 400;
+  font-weight: 400;
   color: #8695A4;
 }
 
@@ -417,4 +420,128 @@ a {
   font-weight: 400;
   margin-top: 26px;
   padding-bottom: 54px;
+}
+
+/* Version Mobile */
+
+@media (max-width: 480px) {
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container-page {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .container-page-details {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Menu */
+
+  .nav {
+    width: 375px;
+    height: 50px;
+    background-image: url(img/Mobile-Header.svg);
+    padding-bottom: 34px;
+  }
+
+  .nav a {
+    display: none;
+    overflow: hidden;
+  }
+
+  /* Hero */
+
+  .hero {
+    padding-top: 34px;
+    padding-bottom: 59px;
+    height: 80%;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .hero-content-left {
+    align-items: center;
+  }
+
+  .hero-content-left h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 34px;
+    width: 312px;
+  }
+
+  .hero-content-right img {
+    width: 174.38px;
+    height: 180px;
+  }
+
+  /* Blog */
+
+  .blog-inf {
+    display: block;
+    text-align: center;
+  }
+
+  .blog-inf p {
+    font-size: 18px;
+  }
+  
+  .blog-inf a {
+    display: none;
+  }
+
+  .blog-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 354px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .card-info p {
+    font-size: 16px;
+  }
+
+  /* Works */
+
+  .work-tittle {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .work-card {
+    flex-direction: column;
+  }
+
+  .work-card img {
+    width: 339px;
+    height: 230px;
+  }
+
+  .work-card-tittle {
+    font-size: 24px;
+  }
+
+  .work-card-date span, p {
+    font-size: 16px;
+  }
+
+  .work-card-description {
+    font-size: 16px;
+  }
 }
